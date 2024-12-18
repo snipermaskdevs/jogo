@@ -1,0 +1,193 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do container de jogo */
+#game-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#game-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do título */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Efeito de fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilo dos botões */
+.btn {
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    background-color: #004085;
+    transform: translateY(2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do resultado do dado */
+#dice-result {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#dice-result.success {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#dice-result.error {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Estilo de animação do dado */
+#dice-animation-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dado estilizado */
+.dice {
+    width: 50px;
+    height: 50px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.5s ease;
+}
+
+/* Animação do dado rolando */
+@keyframes rollDice {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#dice.rolling {
+    animation: rollDice 1s ease-in-out;
+}
+
+/* Indicador de carregamento */
+#loading-indicator {
+    display: none;
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-top: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    #game-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}

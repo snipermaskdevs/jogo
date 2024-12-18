@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="../css/jogo-da-forca.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jogos Divertidos</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../html/jogo-da-velha.html">Jogo da Velha</a></li>
+                <li><a href="../html/jogo-da-cobrinha.html">Jogo da Cobrinha</a></li>
+                <li><a href="../html/jogo-de-memoria.html">Jogo da Memória</a></li>
+                <li><a href="../html/jogo-da-adivinhar-numero.html">Jogo da Adivinhar Número</a></li>
+                <li><a href="../html/jogo-de-dado.html">Jogo de Dados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="game-container">
+        <h1>Jogo da Forca</h1>
+        <p id="word">_ _ _ _ _</p>
+        <p>Errados: <span id="incorrect-guesses"></span></p>
+        <input type="text" id="guess" maxlength="1">
+        <button id="submit-guess">Adivinhar</button>
+        <p id="message"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jogos Divertidos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/jogo-da-forca.js"></script>
+</body>
+</html>

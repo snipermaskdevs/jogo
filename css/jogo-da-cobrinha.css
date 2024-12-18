@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+}
+
+#gameCanvas {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#reset-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#reset-button:active {
+    background-color: #444;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    #gameCanvas {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    #gameCanvas {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dado</title>
+    <link rel="stylesheet" href="../css/jogo-de-dado.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo de Dado</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../html/jogo-da-velha.html">Jogo da Velha</a></li>
+                <li><a href="../html/jogo-da-cobrinha.html">Jogo da Cobrinha</a></li>
+                <li><a href="../html/jogo-de-memoria.html">Jogo da Memória</a></li>
+                <li><a href="../html/jogo-da-forca.html">Jogo da Forca</a></li>
+                <li><a href="../html/jogo-da-adivinhar-numero.html">Jogo da Adivinhar Número</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="game-container">
+            <h2>Lance o dado</h2>
+            <div id="dice-animation-container">
+                <div id="dice" class="dice"></div>
+            </div>
+            <button id="roll-button" class="btn">Lançar Dado</button>
+            <p id="dice-result">Resultado: </p>
+            <p id="loading-indicator" style="display:none;">Carregando...</p>
+            <button id="reset-button" class="btn">Reiniciar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jogos Divertidos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/jogo-de-dado.js"></script>
+</body>
+</html>
